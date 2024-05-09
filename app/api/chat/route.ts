@@ -28,7 +28,7 @@ async function queryWithModel(message : string) {
 let Message = mongoose.models.Message || mongoose.model('Message', messageSchema);
 
 
-export async function connectToMongoDB() {
+ async function connectToMongoDB() {
     try {
         const dbStatus = await mongoose.connect(process.env.MONGODB_URI as string);
         if(dbStatus.connection.readyState == 1) return true;
@@ -37,7 +37,7 @@ export async function connectToMongoDB() {
     }
 }
 
-export async function addToDB(message : string, type : string) {
+ async function addToDB(message : string, type : string) {
     try {
         if(!message || !type) return;
         const status = await connectToMongoDB();

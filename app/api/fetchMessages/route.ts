@@ -1,6 +1,15 @@
-import { connectToMongoDB } from "../chat/route";
+
 import { NextRequest, NextResponse } from "next/server";
 import mongoose from "mongoose";
+
+async function connectToMongoDB() {
+    try {
+        const dbStatus = await mongoose.connect(process.env.MONGODB_URI as string);
+        if(dbStatus.connection.readyState == 1) return true;
+    } catch (error) {
+        return error;
+    }
+}
 
 export async function GET(req: NextRequest) {
     try {
