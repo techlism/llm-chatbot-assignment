@@ -12,7 +12,7 @@ export default function BotInfo() {
           alt="Profile banner"
           className="w-full h-56 object-cover"
           height="250"
-          src="/anime-girl.jpeg"
+          src="/anime_girl.jpeg"
           style={{
             aspectRatio: "400/250",
             objectFit: "cover",
@@ -74,7 +74,7 @@ export default function BotInfo() {
             <p className="text-xs">
               21-year-old anime fanatic and yoga instructor. I binge-watch anime! Looking for someone to join me in
               downward dog and anime marathons. Fun fact: I can recite the entire script of my favorite anime movie from
-              memory. Let's chat! 🐱 💕 🎀
+              memory. Let&apos;s chat! 🐱 💕 🎀
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function ChatsDemo() {
                 </Avatar>
                 <div className="grid gap-0.5 text-sm">
                   <div className="font-bold">Jane Doe</div>
-                  <div className="text-gray-500 dark:text-gray-400">Hey, how's it going?</div>
+                  <div className="text-gray-500 dark:text-gray-400">Hey, how&apos;s it going?</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-400">2:34 PM</div>
@@ -38,7 +38,7 @@ export default function ChatsDemo() {
                 </Avatar>
                 <div className="grid gap-0.5 text-sm">
                   <div className="font-bold">Sarah Lee</div>
-                  <div className="text-gray-500 dark:text-gray-400">Let's discuss the project later.</div>
+                  <div className="text-gray-500 dark:text-gray-400">Let&apos;s discuss the project later.</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-400">Yesterday</div>
