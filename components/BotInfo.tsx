@@ -1,5 +1,5 @@
 
-import { AvatarImage, Avatar } from "@/components/ui/avatar"
+import { AvatarImage, Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { GroupIcon, HeartIcon, MessageCircleIcon, PencilIcon } from "lucide-react"
@@ -20,7 +20,8 @@ export default function BotInfo() {
           width="400"
         />
         <Avatar className="absolute -bottom-10 left-4">
-          <AvatarImage alt="Jessica Anderson" src="/placeholder.svg?height=80&width=80" />
+          <AvatarImage alt="Jessica Anderson" src="" />
+          <AvatarFallback>JA</AvatarFallback>
         </Avatar>
       </div>
       <div className="mt-12 pb-4 px-4">
