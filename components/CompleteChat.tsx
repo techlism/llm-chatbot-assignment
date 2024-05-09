@@ -58,8 +58,7 @@ export default function CompleteChat() {
           }
         },[])
         return (
-          <main key="1" className="flex flex-col overflow-hidden mx-4">
-            <Navbar/>
+          <main key="1" className="flex flex-col overflow-hidden mx-4">  
             <div className="grid w-full grid-cols-[300px_1fr] overflow-hidden">
              <BotInfo/>
               <div className="flex flex-col border-2 rounded-e-md">    
